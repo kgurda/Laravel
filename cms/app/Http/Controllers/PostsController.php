@@ -27,7 +27,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        return "Create";
     }
 
     /**
@@ -49,7 +49,7 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //
+        return "this is the show method". $id;
     }
 
     /**
@@ -85,4 +85,10 @@ class PostsController extends Controller
     {
         //
     }
+
+    public function contact()
+    {
+        return view('contact');
+    }
+
 }
