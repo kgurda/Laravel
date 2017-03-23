@@ -1,5 +1,6 @@
 <?php
 
+use App\Post;
 
 //Route::get('/', function () {
 //
@@ -43,57 +44,146 @@
  * -----database sql querys--------
  */
 
-Route::get('/insert', function () {
+//Route::get('/insert', function () {
+//
+//    DB::insert('insert into posts(title, content) values(?,?)', ['Laravel', 'Laravel is the best ']);
+//
+//
+//});
+//
+//Route::get('/read', function() {
+//
+//
+//    $results = DB::select('select * from posts where id = ?', [1]);
+//
+////    foreach ($results as $post) {
+////
+////        return $post->title;
+////    }
+//
+//    return $results; //give us object
+//
+//});
+//
+//Route::get('/update', function() {
+//
+//
+//    $updated = DB::update('update posts set title = "Updated title" where id = ?', [1]);
+//
+//    return $updated;
+//
+//
+//
+//});
+//
+//Route::get('delete', function() {
+//
+//   $deleted = DB::delete('delete from posts where id = ?', [1]);
+//
+//   return $deleted;
+//
+//});
 
-    DB::insert('insert into posts(title, content) values(?,?)', ['PHP with Laravel', 'PHP Laravel is the best thing that has happened to PHP']);
+//Route::get('/contact', 'PostsController@contact');
+//
+//Route::get('post/{id}/{name}', 'PostsController@showPost');
 
+/*
+ * -----eloquent --------
+ */
 
-});
-
-Route::get('/read', function() {
-
-
-    $results = DB::select('select * from posts where id = ?', [1]);
-
-//    foreach ($results as $post) {
+//Route::get('/read', function() {
+//
+//
+//    $posts = Post::all();
+//
+//    foreach ($posts as $post) {
 //
 //        return $post->title;
 //    }
+//
+//});
+//
+//Route::get('/find', function() {
+//
+//
+//    $posts = Post::find(2);
+//
+//    return $posts->title;
+//
+//});
 
-    return $results; //give us object
+//Route::get('/findwhere', function() {
+//
+//   $posts = Post::where('id', 3)->orderBy('id', 'desc')->take(1)->get();
+//
+//   return $posts;
+//
+//});
+
+
+//Route::get('/findmore', function() {
+//
+////    $posts = Post::findOrFail(1);
+////
+////    return $posts;
+//
+//    $posts = Post::where('users_count', '<', 50)->firstOrFail();
+//    return $posts;
+//
+//});
+
+
+
+//Route::get('/basicinsert', function() {
+//
+//    $post = Post::find(2);
+//
+//    $post->title = 'new Eloquent title insert';
+//    $post->content = 'Description';
+//
+//    $post->save();
+//
+//});
+
+
+//Route::get('/create', function() {
+//
+//    Post::create(['title'=>'the create method', 'content' => 'create content']);
+//
+//
+//});
+
+//Route::get('/update', function() {
+//
+//    Post::where('id', 2)->where('is_admin', 0)->update(['title'=>'new php title', 'content' => 'new content updated']);
+//
+//
+//});
+
+
+//Route::get('/delete', function() {
+//
+//    $post = Post::find(2);
+//    $post->delete();
+//
+//});
+
+
+//Route::get('/delete2', function() {
+//
+//    Post::destroy([4,5]);
+//
+//    Post::where('is_admin', 0)->delete();
+//
+//});
+
+Route::get('/softDelete', function() {
+
+    Post::find(6)->delete();
 
 });
 
-Route::get('/update', function() {
-
-
-    $updated = DB::update('update posts set title = "Updated title" where id = ?', [1]);
-
-    return $updated;
-
-
-
-});
-
-Route::get('delete', function() {
-
-   $deleted = DB::delete('delete from posts where id = ?', [1]);
-
-   return $deleted;
-
-});
-
-
-/*
- * -------------------------------------------
- */
-
-
-
-
-Route::get('/contact', 'PostsController@contact');
-
-Route::get('post/{id}/{name}', 'PostsController@showPost');
 
 
 
