@@ -29,27 +29,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="271" column="0" lean-forward="false" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
+            <state relative-caret-position="295">
+              <caret line="292" column="30" lean-forward="false" selection-start-line="292" selection-start-column="30" selection-end-line="292" selection-end-column="30" />
               <folding>
                 <element signature="e#7#20#0#PHP" expanded="true" />
-                <marker date="1490366590064" expanded="true" signature="746:791" ph="insert into posts... " />
-                <marker date="1490366590064" expanded="true" signature="917:949" ph="select * fro... posts" />
-                <marker date="1490366590064" expanded="true" signature="1174:1227" ph="update posts... " />
-                <marker date="1490366590064" expanded="true" signature="1347:1377" ph="delete from " />
+                <marker date="1490371022089" expanded="true" signature="764:809" ph="insert into posts... " />
+                <marker date="1490371022089" expanded="true" signature="935:967" ph="select * fro... posts" />
+                <marker date="1490371022089" expanded="true" signature="1192:1245" ph="update posts... " />
+                <marker date="1490371022089" expanded="true" signature="1365:1395" ph="delete from " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Country.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Country.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="60" lean-forward="false" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017_03_24_154017_create_countries_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2017_03_24_154017_create_countries_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="41" column="48" lean-forward="false" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+            <state relative-caret-position="621">
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Role.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Role.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -58,8 +88,8 @@
       <file leaf-file-name="Post.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="e#23#62#0#PHP" expanded="true" />
               </folding>
@@ -84,7 +114,11 @@
         <option value="$PROJECT_DIR$/app/Post.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_03_24_140740_create_roles_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_03_24_141143_create_users_roles_table.php" />
+        <option value="$PROJECT_DIR$/app/Role.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_03_24_154135_add_country_id_column_to_users.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_03_24_154017_create_countries_table.php" />
+        <option value="$PROJECT_DIR$/app/Country.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
@@ -349,12 +383,12 @@
       <workItem from="1490265799940" duration="577000" />
       <workItem from="1490266997386" duration="10175000" />
       <workItem from="1490278557183" duration="3996000" />
-      <workItem from="1490359801125" duration="6478000" />
+      <workItem from="1490359801125" duration="9548000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27293000" />
+    <option name="totallyTimeSpent" value="30363000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,7 +411,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24949698" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3025641" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3025641" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -407,10 +441,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#20#0#PHP" expanded="true" />
-            <marker date="1490366590064" expanded="true" signature="746:791" ph="insert into posts... " />
-            <marker date="1490366590064" expanded="true" signature="917:949" ph="select * fro... posts" />
-            <marker date="1490366590064" expanded="true" signature="1174:1227" ph="update posts... " />
-            <marker date="1490366590064" expanded="true" signature="1347:1377" ph="delete from " />
+            <marker date="1490371022089" expanded="true" signature="764:809" ph="insert into posts... " />
+            <marker date="1490371022089" expanded="true" signature="935:967" ph="select * fro... posts" />
+            <marker date="1490371022089" expanded="true" signature="1192:1245" ph="update posts... " />
+            <marker date="1490371022089" expanded="true" signature="1365:1395" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -439,10 +473,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#20#0#PHP" expanded="true" />
-            <marker date="1490366590064" expanded="true" signature="746:791" ph="insert into posts... " />
-            <marker date="1490366590064" expanded="true" signature="917:949" ph="select * fro... posts" />
-            <marker date="1490366590064" expanded="true" signature="1174:1227" ph="update posts... " />
-            <marker date="1490366590064" expanded="true" signature="1347:1377" ph="delete from " />
+            <marker date="1490371022089" expanded="true" signature="764:809" ph="insert into posts... " />
+            <marker date="1490371022089" expanded="true" signature="935:967" ph="select * fro... posts" />
+            <marker date="1490371022089" expanded="true" signature="1192:1245" ph="update posts... " />
+            <marker date="1490371022089" expanded="true" signature="1365:1395" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -463,10 +497,10 @@
           <caret line="39" column="50" lean-forward="false" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
           <folding>
             <element signature="e#7#20#0#PHP" expanded="true" />
-            <marker date="1490366590064" expanded="true" signature="746:791" ph="insert into posts... " />
-            <marker date="1490366590064" expanded="true" signature="917:949" ph="select * fro... posts" />
-            <marker date="1490366590064" expanded="true" signature="1174:1227" ph="update posts... " />
-            <marker date="1490366590064" expanded="true" signature="1347:1377" ph="delete from " />
+            <marker date="1490371022089" expanded="true" signature="764:809" ph="insert into posts... " />
+            <marker date="1490371022089" expanded="true" signature="935:967" ph="select * fro... posts" />
+            <marker date="1490371022089" expanded="true" signature="1192:1245" ph="update posts... " />
+            <marker date="1490371022089" expanded="true" signature="1365:1395" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -499,10 +533,10 @@
           <caret line="39" column="50" lean-forward="false" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
           <folding>
             <element signature="e#7#20#0#PHP" expanded="true" />
-            <marker date="1490366590064" expanded="true" signature="746:791" ph="insert into posts... " />
-            <marker date="1490366590064" expanded="true" signature="917:949" ph="select * fro... posts" />
-            <marker date="1490366590064" expanded="true" signature="1174:1227" ph="update posts... " />
-            <marker date="1490366590064" expanded="true" signature="1347:1377" ph="delete from " />
+            <marker date="1490371022089" expanded="true" signature="764:809" ph="insert into posts... " />
+            <marker date="1490371022089" expanded="true" signature="935:967" ph="select * fro... posts" />
+            <marker date="1490371022089" expanded="true" signature="1192:1245" ph="update posts... " />
+            <marker date="1490371022089" expanded="true" signature="1365:1395" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -644,14 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2017_03_23_123930_create_posts_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -668,20 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="271" column="0" lean-forward="false" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#20#0#PHP" expanded="true" />
-            <marker date="1490366590064" expanded="true" signature="746:791" ph="insert into posts... " />
-            <marker date="1490366590064" expanded="true" signature="917:949" ph="select * fro... posts" />
-            <marker date="1490366590064" expanded="true" signature="1174:1227" ph="update posts... " />
-            <marker date="1490366590064" expanded="true" signature="1347:1377" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2017_03_24_141143_create_users_roles_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -692,19 +704,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="e#23#62#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Role.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="41" column="48" lean-forward="false" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+        <state relative-caret-position="621">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_03_24_154135_add_country_id_column_to_users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_03_24_154017_create_countries_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_03_23_123930_create_posts_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Country.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="60" lean-forward="false" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="292" column="30" lean-forward="false" selection-start-line="292" selection-start-column="30" selection-end-line="292" selection-end-column="30" />
+          <folding>
+            <element signature="e#7#20#0#PHP" expanded="true" />
+            <marker date="1490371022089" expanded="true" signature="764:809" ph="insert into posts... " />
+            <marker date="1490371022089" expanded="true" signature="935:967" ph="select * fro... posts" />
+            <marker date="1490371022089" expanded="true" signature="1192:1245" ph="update posts... " />
+            <marker date="1490371022089" expanded="true" signature="1365:1395" ph="delete from " />
+          </folding>
         </state>
       </provider>
     </entry>

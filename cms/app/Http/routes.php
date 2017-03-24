@@ -4,6 +4,8 @@ use App\Post;
 
 use App\User;
 
+use App\Country;
+
 Route::get('/', function () {
 
     return view('welcome');
@@ -267,6 +269,37 @@ Route::get('/basicinsert', function() {
 //        echo $role->name . "<br>";
 //    }
 //});
+
+
+
+
+//accesing the intermidiate table / pivot (dostęp do tabeli pośredinej)
+
+
+Route::get('/user/pivot', function() {
+
+    $user = User::find(1);
+
+    foreach ($user->roles as $role) {
+
+        echo $role->pivot->created_at;
+    }
+
+});
+
+
+Route::get('/user/country', function() {
+
+    $country = Country::find(4);
+
+    foreach ($country->posts as $post) {
+
+        return $post->title;
+    }
+
+});
+
+
 
 
 
