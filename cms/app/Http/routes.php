@@ -2,11 +2,11 @@
 
 use App\Post;
 
-//Route::get('/', function () {
-//
-//    return view('welcome');
-//
-//});
+Route::get('/', function () {
+
+    return view('welcome');
+
+});
 
 //Route::get('/about', function () {
 //
@@ -135,16 +135,16 @@ use App\Post;
 
 
 
-//Route::get('/basicinsert', function() {
-//
-//    $post = Post::find(2);
-//
-//    $post->title = 'new Eloquent title insert';
-//    $post->content = 'Description';
-//
-//    $post->save();
-//
-//});
+Route::get('/basicinsert', function() {
+
+    $post = Post::find(7);
+
+    $post->title = 'new Eloquent title insert';
+    $post->content = 'Description';
+
+    $post->save();
+
+});
 
 
 //Route::get('/create', function() {
@@ -180,9 +180,58 @@ use App\Post;
 
 Route::get('/softDelete', function() {
 
-    Post::find(6)->delete();
+    Post::find(7)->delete();
 
 });
+
+//Route::get('/readsoftdelete', function() {
+//
+////    $post = Post::find(6);
+////
+////    return $post;
+//
+//// show deleted record
+//
+////     $post = Post::withTrashed()->where('id','>=', 6)->get();
+////
+////     return $post;
+//
+//    $post = Post::onlyTrashed()->where('id', 6)->get();
+//
+//    return $post;
+//
+//});
+
+//Route::get('/restore', function() {
+//
+//     Post::withTrashed()->where('is_admin', 0)->restore();
+//
+//
+//});
+
+Route::get('forcedelete', function() {
+
+    Post::onlyTrashed()->where('is_admin', 0)->forceDelete();
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
