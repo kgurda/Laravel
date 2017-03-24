@@ -2,6 +2,8 @@
 
 use App\Post;
 
+use App\User;
+
 Route::get('/', function () {
 
     return view('welcome');
@@ -177,12 +179,12 @@ Route::get('/basicinsert', function() {
 //    Post::where('is_admin', 0)->delete();
 //
 //});
-
-Route::get('/softDelete', function() {
-
-    Post::find(7)->delete();
-
-});
+//
+//Route::get('/softDelete', function() {
+//
+//    Post::find(7)->delete();
+//
+//});
 
 //Route::get('/readsoftdelete', function() {
 //
@@ -209,16 +211,62 @@ Route::get('/softDelete', function() {
 //
 //});
 
-Route::get('forcedelete', function() {
-
-    Post::onlyTrashed()->where('is_admin', 0)->forceDelete();
-
-
-});
-
+//Route::get('forcedelete', function() {
+//
+//    Post::onlyTrashed()->where('is_admin', 0)->forceDelete();
+//
+//});
 
 
 
+
+/*
+ * -----eloquent relationships--------
+ */
+
+// one to one realtionships
+
+//Route::get('/user/{id}/post', function($id) {
+//
+//
+//    return User::find($id)->post->title;
+//
+//});
+//
+//
+//
+//Route::get('/post/{id}/user', function($id) {
+//
+//
+//    return Post::find($id)->user->name;
+//
+//});
+
+//one to many relationnships
+
+//Route::get('/posts', function() {
+//
+//    $user = User::find(1);
+//
+//    foreach ($user->posts as $post) {
+//
+//        echo $post->title . "<br>";
+//    }
+//
+//});
+
+
+//many to many relationnships
+
+//
+//Route::get('/user/{id}/roles', function($id) {
+//
+//    $roles = User::find($id)->roles;
+//
+//    foreach($roles as $role) {
+//        echo $role->name . "<br>";
+//    }
+//});
 
 
 
