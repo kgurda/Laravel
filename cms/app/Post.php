@@ -29,7 +29,7 @@ class Post extends Model
 
     public function photos()
     {
-        return $this->morphMany('App\Photo', 'imegeable');
+        return $this->morphMany('App\Photo', 'imageable');
     }
 
 

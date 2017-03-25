@@ -5,6 +5,7 @@ use App\Post;
 use App\User;
 
 use App\Country;
+use App\Photo;
 
 Route::get('/', function () {
 
@@ -302,25 +303,30 @@ Route::get('/basicinsert', function() {
 
 // Polymorfic relation
 
-Route::get('user/photos', function() {
+//Route::get('user/photos', function() {
+//
+//   $user = User::find(1);
+//   foreach ($user->photos as $photo) {
+//
+//       return $photo->path;
+//   }
+//});
+//
+//Route::get('post/{id}/photos', function($id) {
+//
+//    $post = Post::find($id);
+//    foreach ($post->photos as $photo) {
+//
+//        echo $photo->path . '<br>';
+//    }
+//});
 
-   $user = User::find(1);
-   foreach ($user->photos as $photo) {
+Route::get('photo/{id}', function($id) {
 
-       return $photo->path;
-   }
+    $photo = Photo::findOrFail($id);
+
+    return $photo->imageable_id;
 });
-
-Route::get('post/{id}/photos', function($id) {
-
-    $post = Post::find($id);
-    foreach ($post->photos as $photo) {
-
-        echo $photo->path . '<br>';
-    }
-});
-
-
 
 
 
