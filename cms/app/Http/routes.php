@@ -276,29 +276,49 @@ Route::get('/basicinsert', function() {
 //accesing the intermidiate table / pivot (dostęp do tabeli pośredinej)
 
 
-Route::get('/user/pivot', function() {
+//Route::get('/user/pivot', function() {
+//
+//    $user = User::find(1);
+//
+//    foreach ($user->roles as $role) {
+//
+//        echo $role->pivot->created_at;
+//    }
+//
+//});
+//
+//
+//Route::get('/user/country', function() {
+//
+//    $country = Country::find(4);
+//
+//    foreach ($country->posts as $post) {
+//
+//        return $post->title;
+//    }
+//
+//});
 
-    $user = User::find(1);
 
-    foreach ($user->roles as $role) {
+// Polymorfic relation
 
-        echo $role->pivot->created_at;
-    }
+Route::get('user/photos', function() {
 
+   $user = User::find(1);
+   foreach ($user->photos as $photo) {
+
+       return $photo->path;
+   }
 });
 
+Route::get('post/{id}/photos', function($id) {
 
-Route::get('/user/country', function() {
+    $post = Post::find($id);
+    foreach ($post->photos as $photo) {
 
-    $country = Country::find(4);
-
-    foreach ($country->posts as $post) {
-
-        return $post->title;
+        echo $photo->path . '<br>';
     }
-
 });
-
 
 
 
