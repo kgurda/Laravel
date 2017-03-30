@@ -11,7 +11,7 @@
                 <a class="nav-link ml-auto" href="#">{{ Auth::user()->name }}</a>
 
             @endif
-            
+
         </nav>
     </div>
 </div>
