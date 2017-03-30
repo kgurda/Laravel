@@ -6,10 +6,15 @@ use Illuminate\Http\Request;
 
 class SessionsController extends Controller
 {
-    //
+
+    public function __construct()
+    {
+        $this->middleware('guest')->except('destroy');
+    }
+
     public function create()
     {
-
+        return view('sessions.create');
     }
 
     public function destroy()
@@ -18,5 +23,21 @@ class SessionsController extends Controller
 
         return redirect()->home();
 
+    }
+
+    public function store()
+    {
+        //attempt to authenticate the user, if so->sign in, if not ->redirect
+
+
+        if(! auth()->attempt(request(['email', 'password']))) {
+
+            return back()->withErrors([
+                'message' => 'Please check your credentioals and try again.'
+            ]);
+        }
+
+
+        return redirect('/');
     }
 }

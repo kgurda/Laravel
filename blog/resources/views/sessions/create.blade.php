@@ -3,23 +3,17 @@
 
 @section('content')
 
-    <h1>Register</h1>
 
-    <form method="post" action="/register">
+    <h1>Sign in</h1>
+
+
+    <form method="post" action="/login">
         {{ csrf_field() }}
-
-        <div class="form-group">
-
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" name="name" required>
-
-        </div>
 
         <div class="form-group">
 
             <label for="email">Email:</label>
             <input type="text" class="form-control" id="email" name="email" required>
-
         </div>
 
         <div class="form-group">
@@ -31,14 +25,7 @@
 
         <div class="form-group">
 
-            <label for="password_confirmation">Password Confirmation:</label>
-            <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" required>
-
-        </div>
-
-        <div class="form-group">
-
-            <button type="submit" class="btn btn-primaryl">Register</button>
+            <button type="submit" class="btn btn-primaryl">Sign in</button>
 
         </div>
 
@@ -47,6 +34,5 @@
 
 
     </form>
-
 
 @endsection
